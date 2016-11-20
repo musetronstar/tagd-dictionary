@@ -1,6 +1,6 @@
-a (an)	ad.	one
-a (an)	ad.	any
-a (an)	ad.	each
+a	ad.	one
+a	ad.	any
+a	ad.	each
 able	v.	having the power to do something
 about	adj.	almost	about half
 about	adj.	of or having a relation to	We talk about the weather.
@@ -74,6 +74,9 @@ amend	v.	to add to or to change (a proposal or law)
 ammunition	n.	the bullets or shells fired from guns
 among	ad.	in or part of (a group)
 amount	n.	the number, size or weight of anything
+an	ad.	one
+an	ad.	any
+an	ad.	each
 anarchy	n.	a lack of order
 anarchy	n.	lawlessness
 ancestor	n.	a family member from the past
@@ -310,8 +313,6 @@ career	n.	a person's working life	The actor's career lasted for thirty years.
 careful	ad.	acting safely
 careful	ad.	with much thought
 carry	v.	to take something or someone from one place to another
-case (court)	n.	a legal action
-case (medical)	n.	an incident of disease	There was only one case of chicken pox at the school.
 cat	n.	a small animal that often lives with humans
 catch	v.	to seize after a chase
 catch	v.	to stop and seize with the hands
@@ -457,6 +458,7 @@ country	n.	the territory of a nation
 country	n.	land away from cities
 court	n.	where trials take place
 court	n.	where judges make decisions about law
+court case	n.	a legal action
 cover	v.	to put something over a person or thing
 cover	n.	anything that is put over a person or thing
 cow	n.	a farm animal used for its milk
@@ -1398,6 +1400,7 @@ measure	n.	an action taken
 measure	n.	a legislative proposal
 meat	n.	the part of a dead animal used for food
 media	n.	all public information organizations, including newspapers, television and radio
+medical case	n.	an incident of disease	There was only one case of chicken pox at the school.
 medicine	n.	a substance or drug used to treat disease or pain
 medicine	n.	the science or study of treating and curing disease or improving health
 meet	v.	to come together with someone or something at the same time and place
@@ -2037,9 +2040,10 @@ security	n.	measures necessary to protect a person or place	Security was increas
 see	v.	to know or sense through the eyes
 see	v.	to understand or know
 seed	n.	the part of a plant from which new plants grow
-seek(ing)	v.	to search for	They are seeking a cure for cancer.
-seek(ing)	v.	to try to get	She is seeking election to public office.
-seek(ing)	v.	to plan to do	Electric power companies are seeking to reduce their use of coal.
+seek	v.	to search for	They are seeking a cure for cancer.
+seek	v.	to try to get	She is seeking election to public office.
+seek	v.	to plan to do	Electric power companies are seeking to reduce their use of coal.
+seeking	v.	to seek
 seem	v.	to appear to be	She seems to be in good health.
 seize	v.	to take quickly by force
 seize	v.	to take control of quickly
@@ -2109,7 +2113,9 @@ shoot	v.	to use a gun
 short	ad.	lasting only for a small period of time
 short	ad.	not long
 short	ad.	opposite tall
-should	v.	used with another verb (action word) to show responsibility ("We should study."), probability ("The talks should begin soon."), or that something is believed to be a good idea	Criminals should be punished.
+should	v.	used with another verb (action word) to show responsibility	We should study
+should	v.	used with another verb (action word) to show probability	The talks should begin soon.
+should	v.	that something is believed to be a good idea	Criminals should be punished.
 shout	v.	to speak very loudly
 show	v.	to make something be seen
 show	v.	to make known
@@ -2324,8 +2330,7 @@ sure	ad.	with good reason to believe
 sure	ad.	true without question
 surface	n.	the outer side or top of something	The rocket landed on the surface of the moon.
 surplus	n.	an amount that is more than is needed
-surplus	n.	extra
-surplus	n.	("That country has a trade surplus. It exports more than it imports.")
+surplus	n.	extra	That country has a trade surplus. It exports more than it imports.
 surprise	v.	to cause a feeling of wonder because something is not expected
 surprise	n.	something not expected
 surprise	n.	the feeling caused by something not expected
@@ -2521,7 +2526,8 @@ up	ad.	to, in or at a higher position or value
 urge	v.	to advise strongly
 urge	v.	to make a great effort to get someone to do something
 urgent	ad.	needing an immediate decision or action
-us	pro.	the form of the word "we" used after a preposition ("He said he would write to us.") or used as an object of a verb	They saw us yesterday.
+us	pro.	the form of the word "we" used after a preposition	He said he would write to us.
+us	pro.	used as an object of a verb	They saw us yesterday.
 use	v.	to employ for a purpose
 use	v.	to put into action
 usual	ad.	as is normal or common
