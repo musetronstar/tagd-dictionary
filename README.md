@@ -1,6 +1,8 @@
 # Voice of America Word Book in Simple English
 ## in the TAGL language
 
+The VOA Word Book and these project files are in the Public Domain, copywrite free, and can be used for any purpose.
+
 ### Steps to produce
 
 1. Download the [VOA Word Book]("http://docs.voanews.eu/en-US-LEARN/2014/02/15/7f8de955-596b-437c-ba40-a68ed754c348.pdf")
