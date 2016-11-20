@@ -5,7 +5,9 @@ The VOA Word Book and these project files are in the Public Domain, copywrite fr
 
 ### Steps to produce
 
-1. Download the [VOA Word Book]("http://docs.voanews.eu/en-US-LEARN/2014/02/15/7f8de955-596b-437c-ba40-a68ed754c348.pdf")
+1. Download the VOA Word Book:
+
+   `wget http://docs.voanews.eu/en-US-LEARN/2014/02/15/7f8de955-596b-437c-ba40-a68ed754c348.pdf`
 2. Convert from pdf to text:
 
    `pdftotext -nopgbrk -enc ASCII7 7f8de955-596b-437c-ba40-a68ed754c348.pdf`
