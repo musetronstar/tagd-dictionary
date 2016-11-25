@@ -18,10 +18,10 @@ The VOA Word Book and these project files are in the Public Domain, copywrite fr
 
    `./txt-defs-to-tsv.pl 7f8de955-596b-437c-ba40-a68ed754c348.txt | awk -F '\t' '{ printf "%s\t%s\t%s\t%s\n", $1, $2, $3, $4}' > word-list-defs.tsv`
 
-   (awk adds a 4th column if doesn't exist - to make githup TSV parser happy)
+   (awk adds a 4th column if doesn't exist - to make github TSV parser happy)
 4. Edit anomolies in the parsed tsv file `word-list-defs.tsv` due to inconsistent formatting in the source document. Add a TSV header and replace `"` with `'` to make github's TSV file parser happy.  See [Word List Definition Edits](#word-list-definition-edits).
 5. Consruct a file of spans of text up to a given part of speech ordered by frequency of occurence.
-   The file is in the format: `<freq> <span> <tab> <pos>`
+   The file is in the format: `freq <tab> span <tab> pos`
 
    `echo -e "#freq\t#span\t#pos" > pos-spans.tsv && awk -F '\t' '{ print $2 }' word-list-defs.tsv | sort | uniq | while read pos ; do ./ngrams.pl span-pos $pos word-list-defs.tsv ; done | sort | uniq -c | sort -nr | sed 's/^ *\([0-9]\+\) \(.*\)/\1\t\2/g' >> pos-spans.tsv`
 
