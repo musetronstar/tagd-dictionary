@@ -1,0 +1,56 @@
+>> event _is_a _entity;
+>> contained_in _super _super;
+>> concept _is_a _entity;
+>> category _is_a concept;
+>> indicates _type_of _relator;
+>> action _type_of event;
+>> expression _is_a action;
+>> communication _type_of expression;
+>> symbol _type_of communication;
+>> letter _type_of symbol;
+>> contains _type_of _relator;
+>> plural_of _type_of _super;
+>> word _super letter;
+>> words plural_of word;
+
+-***
+	Parts of Speech as listed in VOA word book
+	n. (noun) – a name word
+	v. (verb) - an action word
+	ad. (adjective/adverb) – a describing word
+	prep. (preposition) – a word used to show a relation
+	pro. (pronoun) – a word used in place of a noun
+	conj. (conjunction) – a joining word
+*-
+>> part_of_speech _type_of symbol;
+>> noun _type_of part_of_speech;
+>> verb _type_of part_of_speech;
+>> adjective _type_of part_of_speech;  -- not listed in the word book but occurs
+>> adjective_adverb _type_of part_of_speech;  -- not listed in the word book but occurs
+>> preposition _type_of part_of_speech;
+>> pronoun _type_of part_of_speech;
+>> conjunction _type_of part_of_speech;
+
+>> book _type_of communication;
+>> reference_book _type_of book;
+>> dictionary _is_a reference_book;
+>> definition _is_a _message;
+>> definitions plural_of definition;
+>> defined_in _super _super indicates definition;
+>> example _is_a _message;
+>> categorized_as _type_of _relator indicates category;
+>> title _is_a _message;
+>> description _is_a _message;
+>> represents _is_a _relator;
+
+>> namespace _type_of symbol;
+>> VOA _is_a namespace;
+>> VOA:Special_English_Word_Book _is_a dictionary
+_has title = "VOA Special English Word Book"
+_has description = "A list of words used in Special English programs on radio, television and the Internet"
+contains words, definitions
+
+>> locator _is_a _relator;
+>> locates_resource _is_a locator;
+>> http://docs.voanews.eu/en-US-LEARN/2014/02/15/7f8de955-596b-437c-ba40-a68ed754c348.pdf
+locates_resource VOA:Special_English_Word_Book;
