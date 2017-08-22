@@ -52,7 +52,7 @@ while (<>) {
 	print "represents word = \"$word\"\n";
 
 	if ( exists $POS_abv{$pos} ) {
-		print "categorized_as part_of_speech = $POS_abv{$pos}\n";
+		print "categorized_as $POS_abv{$pos}\n";
 	} else {
 		die "unknown part of speech: $pos";
 	}
