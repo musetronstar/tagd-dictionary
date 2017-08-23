@@ -1,5 +1,5 @@
 >> event _is_a _entity;
->> contained_in _super _super;
+>> contained_in _sub _sub;
 >> concept _is_a _entity;
 >> category _is_a concept;
 >> indicates _type_of _relator;
@@ -9,8 +9,8 @@
 >> symbol _type_of communication;
 >> letter _type_of symbol;
 >> contains _type_of _relator;
->> plural_of _type_of _super;
->> word _super letter;
+>> plural_of _type_of _sub;
+>> word _sub letter;
 >> words plural_of word;
 
 -***
@@ -36,7 +36,7 @@
 >> dictionary _is_a reference_book;
 >> definition _is_a _message;
 >> definitions plural_of definition;
->> defined_in _super _super indicates definition;
+>> defined_in _sub _sub indicates definition;
 >> example _is_a _message;
 >> categorized_as _type_of _relator indicates category;
 >> title _is_a _message;
