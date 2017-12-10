@@ -13828,72 +13828,40 @@ represents word = "zoo"
 categorized_as noun
 _has definition = "a place where animals are kept for the public to look at and study"
 
--*** letter B ***-
-
->> VOA:B contained_in VOA represents letter = "B"
-
 >> "VOA:blog:0" defined_in VOA:B
 represents word = "blog"
 categorized_as noun
 _has definition = "short term for Web log, a personal Web site where people write about whatever they want"
-
--*** letter D ***-
-
->> VOA:D contained_in VOA represents letter = "D"
 
 >> "VOA:database:0" defined_in VOA:D
 represents word = "database"
 categorized_as noun
 _has definition = "information gathered and stored in a computer in a systematic way so computers can search it"
 
--*** letter E ***-
-
->> VOA:E contained_in VOA represents letter = "E"
-
 >> "VOA:e-mail:0" defined_in VOA:E
 represents word = "e-mail"
 categorized_as noun
 _has definition = "electronic mail that is sent over a computer system or wireless telephone network"
-
--*** letter H ***-
-
->> VOA:H contained_in VOA represents letter = "H"
 
 >> "VOA:hardware:0" defined_in VOA:H
 represents word = "hardware"
 categorized_as noun
 _has definition = "the physical equipment of a computer or a device that is connected to a computer"
 
--*** letter M ***-
-
->> VOA:M contained_in VOA represents letter = "M"
-
 >> "VOA:mouse:0" defined_in VOA:M
 represents word = "mouse"
 categorized_as noun
 _has definition = "a small hand-held device used to control a computer"
-
--*** letter N ***-
-
->> VOA:N contained_in VOA represents letter = "N"
 
 >> "VOA:network:0" defined_in VOA:N
 represents word = "network"
 categorized_as noun
 _has definition = "a group of computers or other devices, such as telephones, connected by telecommunications links"
 
--*** letter P ***-
-
->> VOA:P contained_in VOA represents letter = "P"
-
 >> "VOA:processor:0" defined_in VOA:P
 represents word = "processor"
 categorized_as noun
 _has definition = "the brain of a computer which carries out software instructions that operate the hardware of the computer and devices attached to it Also called a CPU or chip."
-
--*** letter S ***-
-
->> VOA:S contained_in VOA represents letter = "S"
 
 >> "VOA:server:0" defined_in VOA:S
 represents word = "server"
@@ -13905,18 +13873,10 @@ represents word = "software"
 categorized_as noun
 _has definition = "electronic instructions given to computers and devices connected to them"
 
--*** letter W ***-
-
->> VOA:W contained_in VOA represents letter = "W"
-
 >> "VOA:World Wide Web:0" defined_in VOA:W
 represents word = "World Wide Web"
 categorized_as noun
 _has definition = "part of the Internet that can be easily searched using software called a browser"
-
--*** letter A ***-
-
->> VOA:A contained_in VOA represents letter = "A"
 
 >> "VOA:account:0" defined_in VOA:A
 represents word = "account"
@@ -13924,21 +13884,13 @@ categorized_as noun
 _has definition = "a record of financial dealings"
 _has example = "A bank account is a record of how much money a person or company has in a bank"
 
--*** letter B ***-
-
->> VOA:B contained_in VOA represents letter = "B"
-
 >> "VOA:bond:0" defined_in VOA:B
 represents word = "bond"
 categorized_as noun
 _has definition = "an agreement to pay interest on a loan, generally for a period of years, until the loan is repaid"
 _has example = "A bond can be bought or sold."
 
--*** letter C ***-
-
->> VOA:C contained_in VOA represents letter = "C"
-
->> "VOA:capital:0" defined_in VOA:C
+>> "VOA:capital:2" defined_in VOA:C
 represents word = "capital"
 categorized_as noun
 _has definition = "money or property used to create more wealth"
@@ -13953,19 +13905,11 @@ represents word = "corporation"
 categorized_as noun
 _has definition = "a business that is organized as a legal company separate from its owners and workers"
 
--*** letter D ***-
-
->> VOA:D contained_in VOA represents letter = "D"
-
 >> "VOA:dividend:0" defined_in VOA:D
 represents word = "dividend"
 categorized_as noun
 _has definition = "part of a company's earnings that is given to shareholders"
 _has example = "Not all stocks pay dividends."
-
--*** letter I ***-
-
->> VOA:I contained_in VOA represents letter = "I"
 
 >> "VOA:index:0" defined_in VOA:I
 represents word = "index"
@@ -13973,11 +13917,7 @@ categorized_as noun
 _has definition = "a way of measuring the value of a group of securities"
 _has example = "A stock index measures the value of a group of stocks."
 
--*** letter S ***-
-
->> VOA:S contained_in VOA represents letter = "S"
-
->> "VOA:security:0" defined_in VOA:S
+>> "VOA:security:3" defined_in VOA:S
 represents word = "security"
 categorized_as noun
 _has definition = "evidence of ownership that has financial value, such as a stock or bond"

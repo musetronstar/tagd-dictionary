@@ -4,9 +4,10 @@ use strict;
 use warnings;
 
 # input must be sorted by words (first column) or word::sense_count will contain duplicates
-my $sense_count = 0;
+my %word_count = ();
 my $container;
 my $letter = '';
+my %LETTERS_PRINTED = ();
 my $last_word = '';
 
 my %POS_abv = (
@@ -37,16 +38,14 @@ while (<>) {
 	my $ltr = uc(substr($word, 0, 1));
 	if ( $ltr =~ /[A-Z]/ and $ltr ne $letter ) {
 		$letter = $ltr;
-		print "-*** letter $letter ***-\n\n";
 		$container = "$namespace:$letter";
-		print ">> $container contained_in $namespace represents letter = \"$letter\"\n\n";
+		if (++$LETTERS_PRINTED{$letter} == 1) {
+			print "-*** letter $letter ***-\n\n";
+			print ">> $container contained_in $namespace represents letter = \"$letter\"\n\n";
+		}
 	}
 
-	if ( $word eq $last_word ) {
-		$sense_count++;
-	} else {
-		$sense_count = 0;
-	}
+	my $sense_count = ++$word_count{$word} - 1;
 
 	print ">> \"$namespace:$word:$sense_count\" defined_in $container\n";
 	print "represents word = \"$word\"\n";
