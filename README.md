@@ -8,21 +8,26 @@ The VOA Word Book and these project files are in the Public Domain, copywrite fr
 1. Download the VOA Word Book:
 
    `wget http://docs.voanews.eu/en-US-LEARN/2014/02/15/7f8de955-596b-437c-ba40-a68ed754c348.pdf`
+
 2. Convert from pdf to text:
 
    `pdftotext -nopgbrk -enc ASCII7 7f8de955-596b-437c-ba40-a68ed754c348.pdf`
 
    Insert blanks lines in `7f8de955-596b-437c-ba40-a68ed754c348.txt` before and after
    the caption `fish (line 1273)` or it will get parsed incorrectly
+
 3. Extract the word list and definitions into a well formatted tab delimmited file:
 
    `./txt-defs-to-tsv.pl 7f8de955-596b-437c-ba40-a68ed754c348.txt | awk -F '\t' '{ printf "%s\t%s\t%s\t%s\n", $1, $2, $3, $4}' > word-list-defs.tsv`
 
    (awk adds a 4th column if doesn't exist - to make github TSV parser happy)
+
 4. Edit anomolies in the parsed tsv file `word-list-defs.tsv` due to inconsistent formatting in the source document. Add a TSV header and replace `"` with `'` to make github's TSV file parser happy.  See [Word List Definition Edits](#word-list-definition-edits).
+
 5. Generate a TAGL file of the word list and definitions:
 
 	`./tsv-to-tagl.pl VOA word-list-defs.tsv > word-list-defs.tagl`
+
 6. Consruct a file of spans of text up to a given part of speech ordered by frequency of occurence.
    The file is in the format: `freq <tab> span <tab> pos`
 
