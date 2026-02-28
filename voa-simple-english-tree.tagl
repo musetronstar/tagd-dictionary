@@ -96,7 +96,6 @@
 >> complete _sub amount;
 >> little_less_than _sub less_than _rel little;
 >> one_or_more _sub number greater_than value = 1;
->> group _sub _entity;
 
 -*
  * prepositions as relators (in order of frequency of occurance)
@@ -116,7 +115,16 @@
 >> before _sub _rel;
 >> because _sub _rel;
 >> under _sub _rel;
+>> group _sub number;
 >> group_of _sub of _rel group;
+>> energy _sub _entity;
+>> matter of energy;
+>> nature of matter;
+>> human of nature;
+>> person of human;
+>> people group_of person;
+>> thing:group _sub group _rel thing;
+>> people:group _sub group _rel people;
 
 >> one:a _sub one
 _has VOA:id = "VOA:a:0"
@@ -155,14 +163,9 @@ _has definition = "each"
  *   power:0 "the ability to control or direct others"
  *   power:1 "control"
  *-
->> energy _sub _entity;
->> matter of energy;
->> nature of matter;
->> human of nature;
->> person of human;
->> people group_of person;
 >> mind of human;
 >> know of mind;
+>> idea of mind;
 >> feel of know;
 >> emotion of feel;
 >> love of emotion;
@@ -238,9 +241,11 @@ categorized_as preposition
 _has definition = "at a higher place"
 
 >> quality _sub know;
+>> quality_of _sub of _rel quality;
 >> treatment _sub act;
 >> bad _sub quality;
->> causes _sub _rel;
+>> cause _sub act;
+>> causes _sub _rel _rel cause;
 >> harm _sub feel;
 >> injury _sub feel;
 
@@ -270,7 +275,8 @@ _has definition = "to agree to receive"
 
 >> chance _sub _entity;
 >> mistake _sub act;
->> planned _sub quality;
+>> plan _sub idea;
+>> planned _sub plan;
 >> unplanned _sub planned not true;
 
 >> something:accident _sub something
@@ -288,15 +294,23 @@ categorized_as noun
 _has definition = "an unplanned event"
 
 >> say _sub expression;
->> responsible _sub quality;
->> responsible_for _sub for _rel responsible;
->> crime _sub act;
+>> effort _sub act;
 >> make _sub act;
+>> work _sub effort;
+>> job _sub work;
+>> duty _sub job _rel work;
+>> have _sub _has;
+>> having _sub have;
+>> person:responsible _sub quality _rel person having duty, job;
+>> cause:responsible _sub cause;
+>> responsible_for _sub for _rel cause:responsible;
+>> crime _sub act;
 >> statement _sub expression;
 >> against _sub _rel;
 >> someone _sub person _rel some;
 >> side _sub place;
->> other _sub quality;
+>> kind of something;
+>> other _sub kind;
 >> side:other _sub side
 _rel other;
 
@@ -347,7 +361,7 @@ _has definition = "to do something"
 >> another _sub other;
 >> more _sub amount greater_than little;
 >> larger _sub more;
->> government _sub group;
+>> government _sub people:group;
 >> part _sub something;
 >> part_of _sub _sub;
 >> executive _sub quality;
@@ -864,7 +878,6 @@ _has definition = "a little less than completely"
  * more: "greater in size or amount"
  * sort: "a kind of something"
  *-
->> kind of something;
 >> special _sub kind;
 >> no_special _sub not not_same special;
 
