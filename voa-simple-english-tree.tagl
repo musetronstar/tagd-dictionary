@@ -238,7 +238,6 @@ categorized_as preposition
 _has definition = "at a higher place"
 
 >> quality _sub know;
->> has_quality _sub _has _rel quality;
 >> treatment _sub act;
 >> bad _sub quality;
 >> causes _sub _rel;
@@ -246,7 +245,7 @@ _has definition = "at a higher place"
 >> injury _sub feel;
 
 >> abuse _sub treatment
-has_quality bad
+_rel bad
 causes harm, injury
 _has VOA:id = "VOA:abuse:0"
 represents word = "abuse"
@@ -282,7 +281,7 @@ categorized_as noun
 _has definition = "something that happens by chance or mistake"
 
 >> event:accident _sub event
-has_quality unplanned
+_rel unplanned
 _has VOA:id = "VOA:accident:1"
 represents word = "accident"
 categorized_as noun
@@ -299,7 +298,7 @@ _has definition = "an unplanned event"
 >> side _sub place;
 >> other _sub quality;
 >> side:other _sub side
-has_quality other;
+_rel other;
 
 -- TODO use `_has` as minimal TAGL scaffolding for noun phrases in the
 -- VOA wording: "say a person..." and "make a statement..."
