@@ -341,35 +341,63 @@ represents word = "act"
 categorized_as verb
 _has definition = "to do something"
 
--->> 
---_has VOA:id = "VOA:activist:0"
---represents word = "activist"
---categorized_as noun
---_has definition = "one who seeks change through action"
+>> seek _sub _rel;
+>> change _sub act;
+>> event:play _sub event;
+>> put _sub act;
+>> another _sub other;
+>> more _sub amount greater_than little;
+>> larger _sub more;
+>> government _sub group;
+>> part _sub something;
+>> part_of _sub _sub;
+>> executive _sub quality;
+>> headed_by _sub _rel;
+>> president _sub person;
+>> minister _sub person;
+>> prime_minister _sub minister;
+>> event:show _sub event;
 
--->> 
---_has VOA:id = "VOA:actor:0"
---represents word = "actor"
---categorized_as noun
---_has definition = "someone acting in a play or show"
+>> activist _sub person
+seek change
+through action
+_has VOA:id = "VOA:activist:0"
+represents word = "activist"
+categorized_as noun
+_has definition = "one who seeks change through action"
 
--->> 
---_has VOA:id = "VOA:add:0"
---represents word = "add"
---categorized_as verb
---_has definition = "to put (something) with another to make it larger"
+-- TODO `_has act` is minimal TAGL scaffolding for "someone acting..."
+>> actor _sub person
+_has act
+in event:play, event:show
+_has VOA:id = "VOA:actor:0"
+represents word = "actor"
+categorized_as noun
+_has definition = "someone acting in a play or show"
 
--->> 
---_has VOA:id = "VOA:add:1"
---represents word = "add"
---categorized_as verb
---_has definition = "to say more"
+>> put:add _sub put
+with another
+to make, larger
+_has VOA:id = "VOA:add:0"
+represents word = "add"
+categorized_as verb
+_has definition = "to put (something) with another to make it larger"
 
--->> 
---_has VOA:id = "VOA:administration:0"
---represents word = "administration"
---categorized_as noun
---_has definition = "the executive part of a government, usually headed by a president or prime minister"
+-- TODO `_has more` is minimal TAGL scaffolding for "to say more"
+>> say:add _sub say
+_has more
+_has VOA:id = "VOA:add:1"
+represents word = "add"
+categorized_as verb
+_has definition = "to say more"
+
+>> administration part_of government
+_rel executive
+headed_by president, prime_minister
+_has VOA:id = "VOA:administration:0"
+represents word = "administration"
+categorized_as noun
+_has definition = "the executive part of a government, usually headed by a president or prime minister"
 
 -->> 
 --_has VOA:id = "VOA:admit:0"
