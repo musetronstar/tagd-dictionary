@@ -57,11 +57,11 @@
 >> number _sub _entity;
 >> quantity _sub number;
 >> amount _sub quantity;
+>> some _sub quantity;
 >> value _sub amount;
 >> size _sub value;
 >> weight _sub size;
 >> one _is_a number _has value = 1;
->> some _sub number;
 
 >> object _sub _entity;
 >> thing _sub object;
@@ -228,7 +228,7 @@ _has example = "We talk about the weather."
  * since the vast number of uses of `about` refer to the relation (not almost)
  * lets set up a referent in the universal context
  *-
->> about _refers_to relation:about context VOA;
+>> about _refers_to relation:about _context VOA;
 >> place _sub _entity;
 
 >> above _sub place
@@ -237,29 +237,56 @@ represents word = "above"
 categorized_as preposition
 _has definition = "at a higher place"
 
+>> quality _sub know;
+>> has_quality _sub _has _rel quality;
+>> treatment _sub act;
+>> bad _sub quality;
+>> causes _sub _rel;
+>> harm _sub feel;
+>> injury _sub feel;
+
+>> abuse _sub treatment
+has_quality bad
+causes harm, injury
+_has VOA:id = "VOA:abuse:0"
+represents word = "abuse"
+categorized_as noun
+_has definition = "bad treatment causing harm or injury"
+
 -->> 
 --_has VOA:id = "VOA:abuse:0"
 --represents word = "abuse"
 --categorized_as noun
 --_has definition = "bad treatment causing harm or injury"
 
--->> 
---_has VOA:id = "VOA:accept:0"
---represents word = "accept"
---categorized_as verb
---_has definition = "to agree to receive"
+>> agree _sub know;
+>> receive _sub act;
 
--->> 
---_has VOA:id = "VOA:accident:0"
---represents word = "accident"
---categorized_as noun
---_has definition = "something that happens by chance or mistake"
+>> accept _sub agree
+to receive
+_has VOA:id = "VOA:accept:0"
+represents word = "accept"
+categorized_as verb
+_has definition = "to agree to receive"
 
--->> 
---_has VOA:id = "VOA:accident:1"
---represents word = "accident"
---categorized_as noun
---_has definition = "an unplanned event"
+>> chance _sub _entity;
+>> mistake _sub act;
+>> planned _sub quality;
+>> unplanned _sub planned not true;
+
+>> something:accident _sub something
+by chance, mistake
+_has VOA:id = "VOA:accident:0"
+represents word = "accident"
+categorized_as noun
+_has definition = "something that happens by chance or mistake"
+
+>> event:accident _sub event
+has_quality unplanned
+_has VOA:id = "VOA:accident:1"
+represents word = "accident"
+categorized_as noun
+_has definition = "an unplanned event"
 
 -->> 
 --_has VOA:id = "VOA:accuse:0"
@@ -16923,4 +16950,3 @@ _has definition = "the same in amount, size, weight or value"
 --categorized_as noun
 --_has definition = "a share in ownership of a company"
 --_has example = "The stock of public companies is traded on stock exchanges."
-
