@@ -288,35 +288,58 @@ represents word = "accident"
 categorized_as noun
 _has definition = "an unplanned event"
 
--->> 
---_has VOA:id = "VOA:accuse:0"
---represents word = "accuse"
---categorized_as verb
---_has definition = "to say a person is responsible for an act or crime"
+>> say _sub expression;
+>> responsible _sub quality;
+>> responsible_for _sub for _rel responsible;
+>> crime _sub act;
+>> make _sub act;
+>> statement _sub expression;
+>> against _sub _rel;
+>> someone _sub person _rel some;
+>> side _sub place;
+>> other _sub quality;
+>> side:other _sub side
+has_quality other;
 
--->> 
---_has VOA:id = "VOA:accuse:1"
---represents word = "accuse"
---categorized_as verb
---_has definition = "to make a statement against someone"
+-- TODO use `_has` as minimal TAGL scaffolding for noun phrases in the
+-- VOA wording: "say a person..." and "make a statement..."
+>> say:accuse _sub say
+_has person
+responsible_for act, crime
+_has VOA:id = "VOA:accuse:0"
+represents word = "accuse"
+categorized_as verb
+_has definition = "to say a person is responsible for an act or crime"
 
--->> 
---_has VOA:id = "VOA:across:0"
---represents word = "across"
---categorized_as adjective_adverb
---_has definition = "from side to side"
+>> make:accuse _sub make
+_has statement
+against someone
+_has VOA:id = "VOA:accuse:1"
+represents word = "accuse"
+categorized_as verb
+_has definition = "to make a statement against someone"
 
--->> 
---_has VOA:id = "VOA:across:1"
---represents word = "across"
---categorized_as adjective_adverb
---_has definition = "to the other side"
+>> across _sub place
+from side
+to side
+_has VOA:id = "VOA:across:0"
+represents word = "across"
+categorized_as adjective_adverb
+_has definition = "from side to side"
 
--->> 
---_has VOA:id = "VOA:act:0"
---represents word = "act"
---categorized_as verb
---_has definition = "to do something"
+>> place:across _sub place
+to side:other
+_has VOA:id = "VOA:across:1"
+represents word = "across"
+categorized_as adjective_adverb
+_has definition = "to the other side"
+
+>> act
+do something
+_has VOA:id = "VOA:act:0"
+represents word = "act"
+categorized_as verb
+_has definition = "to do something"
 
 -->> 
 --_has VOA:id = "VOA:activist:0"
