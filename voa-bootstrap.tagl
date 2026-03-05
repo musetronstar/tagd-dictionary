@@ -60,6 +60,8 @@
 >> namespace _type_of symbol;
 >> VOA _is_a namespace;
 >> VOA:id _sub _entity;
+>> as _sub _rel;
+>> identified_as _sub as _rel VOA:id;
 >> VOA:Special_English_Word_Book _is_a dictionary
 _has title = "VOA Special English Word Book"
 _has description = "A list of words used in Special English programs on radio, television and the Internet"
