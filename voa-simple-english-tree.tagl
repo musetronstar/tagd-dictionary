@@ -895,157 +895,252 @@ _has definition = "one or more of no special kind"
 *-
 >> feeling_of _sub of _rel feel;
 >> regret feeling_of sadness;
--->> 
---_has VOA:id = "VOA:apologize:0"
---represents word = "apologize"
---categorized_as verb
---_has definition = "to express regret for a mistake or accident for which one accepts responsibility"
+>> express _sub show;
+>> responsibility _sub duty;
 
--->> 
---_has VOA:id = "VOA:appeal:0"
---represents word = "appeal"
---categorized_as verb
---_has definition = "to take to a higher court, person or group for a decision"
+>> apologize _sub express
+_has regret
+for mistake, something:accident
+_has responsibility
+_has VOA:id = "VOA:apologize:0"
+represents word = "apologize"
+categorized_as verb
+_has definition = "to express regret for a mistake or accident for which one accepts responsibility"
 
--->> 
---_has VOA:id = "VOA:appeal:1"
---represents word = "appeal"
---categorized_as verb
---_has definition = "to call on somebody for help"
+>> take _sub act;
+>> high _sub quality;
+>> higher _sub more _rel high;
+>> court _sub place;
+>> decision _sub act;
 
--->> 
---_has VOA:id = "VOA:appear:0"
---represents word = "appear"
---categorized_as verb
---_has definition = "to show oneself"
+>> take:appeal _sub take
+to court, person, group
+for decision
+_rel higher
+_has VOA:id = "VOA:appeal:0"
+represents word = "appeal"
+categorized_as verb
+_has definition = "to take to a higher court, person or group for a decision"
 
--->> 
---_has VOA:id = "VOA:appear:1"
---represents word = "appear"
---categorized_as verb
---_has definition = "to come into sight"
+>> help _sub act;
+>> call _sub say;
 
--->> 
---_has VOA:id = "VOA:appear:2"
---represents word = "appear"
---categorized_as verb
---_has definition = "to seem"
+>> call:appeal _sub call
+on someone
+for help
+_has VOA:id = "VOA:appeal:1"
+represents word = "appeal"
+categorized_as verb
+_has definition = "to call on somebody for help"
 
--->> 
---_has VOA:id = "VOA:appoint:0"
---represents word = "appoint"
---categorized_as verb
---_has definition = "to name"
+>> self _sub person;
+>> oneself _sub self _rel one;
+>> come _sub act;
+>> sight _sub know;
+>> into _sub to;
+>> seem _sub know;
 
--->> 
---_has VOA:id = "VOA:appoint:1"
---represents word = "appoint"
---categorized_as verb
---_has definition = "to choose"
---_has example = "appoint a judge"
+>> show:appear _sub show
+_has oneself
+_has VOA:id = "VOA:appear:0"
+represents word = "appear"
+categorized_as verb
+_has definition = "to show oneself"
 
--->> 
---_has VOA:id = "VOA:approve:0"
---represents word = "approve"
---categorized_as verb
---_has definition = "to agree with"
+>> come:appear _sub come
+into sight
+_has VOA:id = "VOA:appear:1"
+represents word = "appear"
+categorized_as verb
+_has definition = "to come into sight"
 
--->> 
---_has VOA:id = "VOA:approve:1"
---represents word = "approve"
---categorized_as verb
---_has definition = "to agree to support"
+>> seem:appear _sub seem
+_has VOA:id = "VOA:appear:2"
+represents word = "appear"
+categorized_as verb
+_has definition = "to seem"
 
--->> 
---_has VOA:id = "VOA:archeology:0"
---represents word = "archeology"
---categorized_as noun
---_has definition = "the scientific study of past human life and activities"
+>> name _sub say;
+>> choose _sub act;
 
--->> 
---_has VOA:id = "VOA:area:0"
---represents word = "area"
---categorized_as noun
---_has definition = "any place or part of it"
+>> name:appoint _sub name
+_has VOA:id = "VOA:appoint:0"
+represents word = "appoint"
+categorized_as verb
+_has definition = "to name"
 
--->> 
---_has VOA:id = "VOA:argue:0"
---represents word = "argue"
---categorized_as verb
---_has definition = "to offer reasons for or against something"
+>> choose:appoint _sub choose
+_has VOA:id = "VOA:appoint:1"
+represents word = "appoint"
+categorized_as verb
+_has definition = "to choose"
+_has example = "appoint a judge"
 
--->> 
---_has VOA:id = "VOA:argue:1"
---represents word = "argue"
---categorized_as verb
---_has definition = "to dispute"
+>> support _sub help;
 
--->> 
---_has VOA:id = "VOA:argue:2"
---represents word = "argue"
---categorized_as verb
---_has definition = "to disagree"
+>> agree:approve _sub agree
+with something
+_has VOA:id = "VOA:approve:0"
+represents word = "approve"
+categorized_as verb
+_has definition = "to agree with"
 
--->> 
---_has VOA:id = "VOA:arms:0"
---represents word = "arms"
---categorized_as noun
---_has definition = "military equipment"
+>> support:approve _sub agree
+to support
+_has VOA:id = "VOA:approve:1"
+represents word = "approve"
+categorized_as verb
+_has definition = "to agree to support"
 
--->> 
---_has VOA:id = "VOA:arms:1"
---represents word = "arms"
---categorized_as noun
---_has definition = "weapons"
+>> scientific _sub quality;
+>> study _sub know;
+>> past _sub _entity;
+>> life _sub _entity;
+>> activity _sub act;
 
--->> 
---_has VOA:id = "VOA:army:0"
---represents word = "army"
---categorized_as noun
---_has definition = "military ground forces"
+>> archeology _sub study
+_has past, human, life, activity
+_rel scientific
+_has VOA:id = "VOA:archeology:0"
+represents word = "archeology"
+categorized_as noun
+_has definition = "the scientific study of past human life and activities"
 
--->> 
---_has VOA:id = "VOA:around:0"
---represents word = "around"
---categorized_as adjective_adverb
---_has definition = "on every side (of)"
+>> area _sub place
+_rel any, part
+_has VOA:id = "VOA:area:0"
+represents word = "area"
+categorized_as noun
+_has definition = "any place or part of it"
 
--->> 
---_has VOA:id = "VOA:arrest:0"
---represents word = "arrest"
---categorized_as verb
---_has definition = "to seize a person for legal action"
+>> reason _sub idea;
+>> reasons _sub thing:group _rel reason;
+>> offer _sub act;
+>> disagree _sub agree not true;
+>> dispute _sub disagree;
 
--->> 
---_has VOA:id = "VOA:arrest:1"
---represents word = "arrest"
---categorized_as verb
---_has definition = "to take as a prisoner"
+>> offer:argue _sub offer
+_has reasons
+for something
+against something
+_has VOA:id = "VOA:argue:0"
+represents word = "argue"
+categorized_as verb
+_has definition = "to offer reasons for or against something"
 
--->> 
---_has VOA:id = "VOA:arrive:0"
---represents word = "arrive"
---categorized_as verb
---_has definition = "to come to a place, especially at the end of a trip"
+>> dispute:argue _sub dispute
+_has VOA:id = "VOA:argue:1"
+represents word = "argue"
+categorized_as verb
+_has definition = "to dispute"
 
--->> 
---_has VOA:id = "VOA:art:0"
---represents word = "art"
---categorized_as noun
---_has definition = "expressions or creations by humans, such as paintings, music, writing or statues"
+>> disagree:argue _sub disagree
+_has VOA:id = "VOA:argue:2"
+represents word = "argue"
+categorized_as verb
+_has definition = "to disagree"
 
--->> 
---_has VOA:id = "VOA:artillery:0"
---represents word = "artillery"
---categorized_as noun
---_has definition = "big guns"
+>> military _sub quality;
+>> equipment _sub thing;
+>> weapon _sub thing;
 
--->> 
---_has VOA:id = "VOA:as:0"
---represents word = "as"
---categorized_as conjunction
---_has definition = "equally"
---_has example = "as fast as"
+>> equipment:arms _sub equipment
+_rel military
+_has VOA:id = "VOA:arms:0"
+represents word = "arms"
+categorized_as noun
+_has definition = "military equipment"
+
+>> weapon:arms _sub weapon
+_has VOA:id = "VOA:arms:1"
+represents word = "arms"
+categorized_as noun
+_has definition = "weapons"
+
+>> ground _sub place;
+>> force _sub act;
+
+>> army _sub force
+_rel military, ground
+_has VOA:id = "VOA:army:0"
+represents word = "army"
+categorized_as noun
+_has definition = "military ground forces"
+
+>> every _sub quantity;
+
+>> around _sub on
+_rel every, side
+_has VOA:id = "VOA:around:0"
+represents word = "around"
+categorized_as adjective_adverb
+_has definition = "on every side (of)"
+
+>> legal _sub quality;
+>> seize _sub take;
+>> action _sub act;
+
+>> arrest _sub seize
+_has person
+_has legal, action
+_has VOA:id = "VOA:arrest:0"
+represents word = "arrest"
+categorized_as verb
+_has definition = "to seize a person for legal action"
+
+>> prisoner _sub person;
+
+>> take:arrest _sub take
+_has prisoner
+_has VOA:id = "VOA:arrest:1"
+represents word = "arrest"
+categorized_as verb
+_has definition = "to take as a prisoner"
+
+>> end _sub part;
+>> trip _sub act;
+
+>> arrive _sub come
+to place
+_has end, trip
+_has VOA:id = "VOA:arrive:0"
+represents word = "arrive"
+categorized_as verb
+_has definition = "to come to a place, especially at the end of a trip"
+
+>> create _sub act;
+>> creation _sub create;
+>> painting _sub expression;
+>> music _sub expression;
+>> writing _sub expression;
+>> statue _sub thing;
+
+>> art _sub expression
+_rel human
+_has creation, painting, music, writing, statue
+_has VOA:id = "VOA:art:0"
+represents word = "art"
+categorized_as noun
+_has definition = "expressions or creations by humans, such as paintings, music, writing or statues"
+
+>> big _sub quality;
+>> gun _sub weapon;
+
+>> artillery _sub gun
+_rel big
+_has VOA:id = "VOA:artillery:0"
+represents word = "artillery"
+categorized_as noun
+_has definition = "big guns"
+
+>> equally _sub equal;
+
+>> equally:as _sub equally
+_has VOA:id = "VOA:as:0"
+represents word = "as"
+categorized_as conjunction
+_has definition = "equally"
+_has example = "as fast as"
 
 -->> 
 --_has VOA:id = "VOA:as:1"
