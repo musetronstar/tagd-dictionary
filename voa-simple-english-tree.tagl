@@ -257,12 +257,6 @@ represents word = "abuse"
 categorized_as noun
 _has definition = "bad treatment causing harm or injury"
 
--->> 
---_has VOA:id = "VOA:abuse:0"
---represents word = "abuse"
---categorized_as noun
---_has definition = "bad treatment causing harm or injury"
-
 >> agree _sub know;
 >> receive _sub act;
 
@@ -412,56 +406,87 @@ represents word = "administration"
 categorized_as noun
 _has definition = "the executive part of a government, usually headed by a president or prime minister"
 
--->> 
---_has VOA:id = "VOA:admit:0"
---represents word = "admit"
---categorized_as verb
---_has definition = "to accept"
---_has example = "admitted to the United Nations"
+>> accept:admit _sub accept
+_has VOA:id = "VOA:admit:0"
+represents word = "admit"
+categorized_as verb
+_has definition = "to accept"
+_has example = "admitted to the United Nations"
 
--->> 
---_has VOA:id = "VOA:admit:1"
---represents word = "admit"
---categorized_as verb
---_has definition = "to express one's guilt or responsibility"
---_has example = "He admitted that what he did was wrong."
+>> wrong _sub quality;
+>> guilt _sub wrong;
 
--->> 
---_has VOA:id = "VOA:adult:0"
---represents word = "adult"
---categorized_as noun
---_has definition = "a grown person"
+>> say:admit _sub say
+_has guilt, person:responsible
+_has VOA:id = "VOA:admit:1"
+represents word = "admit"
+categorized_as verb
+_has definition = "to express one's guilt or responsibility"
+_has example = "He admitted that what he did was wrong."
 
--->> 
---_has VOA:id = "VOA:advertise:0"
---represents word = "advertise"
---categorized_as verb
---_has definition = "to show or present the qualities of a product to increase sales"
+>> grown _sub quality;
 
--->> 
---_has VOA:id = "VOA:advise:0"
---represents word = "advise"
---categorized_as verb
---_has definition = "to help with information, knowledge or ideas in making a decision"
+>> adult _sub person
+_rel grown
+_has VOA:id = "VOA:adult:0"
+represents word = "adult"
+categorized_as noun
+_has definition = "a grown person"
 
--->> 
---_has VOA:id = "VOA:affect:0"
---represents word = "affect"
---categorized_as verb
---_has definition = "to produce an effect on"
+>> show _sub act;
+>> present _sub show;
+>> product _sub thing;
+>> increase _sub act;
+>> sale _sub act;
+>> sales _sub thing:group _rel sale;
 
--->> 
---_has VOA:id = "VOA:affect:1"
---represents word = "affect"
---categorized_as verb
---_has definition = "to influence"
---_has example = "A lack of sleep affected the singer's performance."
+>> show:advertise _sub show
+_has product, quality
+to increase, sales
+_has VOA:id = "VOA:advertise:0"
+represents word = "advertise"
+categorized_as verb
+_has definition = "to show or present the qualities of a product to increase sales"
 
--->> 
---_has VOA:id = "VOA:afraid:0"
---represents word = "afraid"
---categorized_as adjective_adverb
---_has definition = "feeling fear"
+>> help _sub act;
+>> information _sub know;
+
+>> advise _sub help
+with information, know, idea
+in make
+_has VOA:id = "VOA:advise:0"
+represents word = "advise"
+categorized_as verb
+_has definition = "to help with information, knowledge or ideas in making a decision"
+
+>> effect _sub _entity;
+>> produce _sub cause;
+
+>> affect _sub produce
+_has effect
+on something
+_has VOA:id = "VOA:affect:0"
+represents word = "affect"
+categorized_as verb
+_has definition = "to produce an effect on"
+
+>> influence _sub affect;
+
+>> influence:affect _sub influence
+_has VOA:id = "VOA:affect:1"
+represents word = "affect"
+categorized_as verb
+_has definition = "to influence"
+_has example = "A lack of sleep affected the singer's performance."
+
+>> fear _sub feel;
+
+>> afraid _sub feel
+_has fear
+_has VOA:id = "VOA:afraid:0"
+represents word = "afraid"
+categorized_as adjective_adverb
+_has definition = "feeling fear"
 
 -->> 
 --_has VOA:id = "VOA:after:0"
@@ -1142,11 +1167,14 @@ categorized_as conjunction
 _has definition = "equally"
 _has example = "as fast as"
 
--->> 
---_has VOA:id = "VOA:as:1"
---represents word = "as"
---categorized_as conjunction
---_has definition = "when"
+>> time _sub _entity;
+>> when _sub time;
+
+>> when:as _sub when
+_has VOA:id = "VOA:as:1"
+represents word = "as"
+categorized_as conjunction
+_has definition = "when"
 
 -->> 
 --_has VOA:id = "VOA:as:2"
