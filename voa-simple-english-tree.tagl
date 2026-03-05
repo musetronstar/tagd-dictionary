@@ -50,10 +50,12 @@
  *	 equal "the same in amount, size, weight or value"
  *-
 >> true _sub _entity;
+>> false _sub _entity;
 >> is _sub true;
 >> not _sub _rel;
 >> opposite _sub not;
 >> false _sub _entity not true;
+>> not _rel false;
 >> number _sub _entity;
 >> quantity _sub number;
 >> amount _sub quantity;
@@ -110,10 +112,10 @@
 >> on _sub _rel;
 >> at _sub _rel;
 >> through _sub _rel;
->> without _sub _rel;
->> toward _sub _rel;
+>> without _sub with; -- TODO _rel out;
+>> toward _sub to;
 >> before _sub _rel;
->> because _sub _rel;
+-->> because _sub to_be _rel cause;
 >> under _sub _rel;
 >> group _sub number;
 >> group_of _sub of _rel group;
@@ -382,9 +384,11 @@ represents word = "actor"
 categorized_as noun
 _has definition = "someone acting in a play or show"
 
+>> to_make _sub to _rel make;
+
 >> put:add _sub put
 with another
-to make, larger
+to_make something = larger
 _has VOA:id = "VOA:add:0"
 represents word = "add"
 categorized_as verb
