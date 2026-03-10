@@ -76,7 +76,7 @@
  *	have the same
  *-
 >> same _sub _rel;
->> not_same _sub same not true;
+>> not_same _sub same not true; -- reasonable induction
 >> equal _sub _entity;
 
 -*
@@ -90,10 +90,10 @@
  * Can tagmemics help resolve this conflict between 'what it is'
  * vs. 'how it's used' (or what's its function)?
  *-
->> equal_to _sub _rel _rel equal;
+>> equal_to _sub _rel _rel equal; -- reasonable induction
 -- greater_than and less_than are not defined but are used in definitions
->> greater_than _sub _rel;
->> less_than _sub _rel;
+>> greater_than _sub _rel; -- reasonable induction
+>> less_than _sub _rel; -- reasonable induction
 >> little _sub amount;
 >> complete _sub amount;
 >> little_less_than _sub less_than _rel little;
@@ -165,7 +165,7 @@ categorized_as adjective
 _has definition = "each"
 
 >> having _sub _has;
->> can_do _sub _can;
+>> can_do _sub _can; -- reasonable induction
 
 -*
  *     act:0 "to do something"
@@ -194,8 +194,8 @@ _has definition = "each"
 >> fear of emotion;
 >> mind of human _can know;
 >> act of mind;
->> to_know _sub to _rel know;
->> to_act _sub to _rel act;
+>> to_know _sub to _rel know; -- reasonable induction
+>> to_act _sub to _rel act; -- reasonable induction
 >> show of to_act;
 >> fact of mind to_know true;
 >> do _sub to _rel act;
@@ -213,7 +213,7 @@ represents word = "able"
 categorized_as verb
 _has definition = "having the power to do something"
 
->> able_to _sub to _rel able;
+>> able_to _sub to _rel able; -- reasonable induction
 
 >> completely _sub complete;
 >> almost _sub quantity little_less_than completely;
@@ -259,7 +259,7 @@ categorized_as preposition
 _has definition = "at a higher place"
 
 >> quality _sub know;
->> quality_of _sub of _rel quality;
+>> quality_of _sub of _rel quality; -- reasonable induction
 >> treatment _sub act;
 >> bad _sub quality;
 >> cause _sub act;
@@ -315,7 +315,7 @@ _has definition = "an unplanned event"
 >> having _sub have;
 >> person:responsible _sub quality _rel person having duty, job;
 >> cause:responsible _sub cause;
->> responsible_for _sub for _rel cause:responsible;
+>> responsible_for _sub for _rel cause:responsible; -- reasonable induction
 >> crime _sub act;
 >> statement _sub expression;
 >> against _sub _rel;
@@ -399,7 +399,7 @@ represents word = "actor"
 categorized_as noun
 _has definition = "someone acting in a play or show"
 
->> to_make _sub to _rel make;
+>> to_make _sub to _rel make; -- reasonable induction
 
 >> put:add _sub put
 with another
@@ -923,7 +923,7 @@ _has definition = "a little less than completely"
  * sort: "a kind of something"
  *-
 >> special _sub kind;
->> no_special _sub not not_same special;
+>> no_special _sub not not_same special; -- reasonable induction
 
 >> any
 no_special kind
@@ -937,7 +937,7 @@ _has definition = "one or more of no special kind"
  * It would be nice if `feeling`, `feeling_of`, or other relators could
  * be derived from feel, but have different TAGD_POSs according to their role.
 *-
->> feeling_of _sub of _rel feel;
+>> feeling_of _sub of _rel feel; -- reasonable induction
 >> regret feeling_of sadness;
 >> express _sub show;
 >> responsibility _sub duty;
