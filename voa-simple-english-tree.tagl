@@ -99,11 +99,19 @@
 >> little_less_than _sub less_than _rel little;
 >> one_or_more _sub number greater_than value = 1;
 
--*
+-* 
  * prepositions as relators (in order of frequency of occurance)
  *-
 >> to _sub _rel;
 >> of _sub _sub;
+>> part_of _sub of;
+>> amount_of _sub of;
+>> number_of _sub of;
+>> member_of _sub of;
+>> form_of _sub of;
+>> kind_of _sub of;
+>> is_a _sub _is_a;
+>> is_an _sub is_a;
 >> in _sub _rel;
 >> for _sub _rel;
 >> by _sub _rel;  -- defined as a conjuction, but it's a prepostion
@@ -359,7 +367,6 @@ _has definition = "to do something"
 >> larger _sub more;
 >> government _sub people:group;
 >> part _sub something;
->> part_of _sub of;
 >> executive _sub quality;
 >> headed_by _sub _rel;
 >> president _sub person;
