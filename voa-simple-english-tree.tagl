@@ -359,7 +359,7 @@ _has definition = "to do something"
 >> larger _sub more;
 >> government _sub people:group;
 >> part _sub something;
->> part_of _sub _sub;
+>> part_of _sub of;
 >> executive _sub quality;
 >> headed_by _sub _rel;
 >> president _sub person;
