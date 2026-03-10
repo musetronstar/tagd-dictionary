@@ -103,6 +103,7 @@
  * prepositions as relators (in order of frequency of occurance)
  *-
 >> to _sub _rel;
+>> than _sub _rel;
 >> of _sub _sub;
 >> part_of _sub of;
 >> amount_of _sub of;
@@ -110,21 +111,28 @@
 >> member_of _sub of;
 >> form_of _sub of;
 >> kind_of _sub of;
+>> made_of _sub of;
 >> is_a _sub _is_a;
 >> is_an _sub is_a;
 >> in _sub _rel;
+>> among _sub in;
 >> for _sub _rel;
+>> used_for _sub for;
 >> by _sub _rel;  -- defined as a conjuction, but it's a prepostion
 >> from _sub _rel;
+>> made_from _sub from;
+>> away_from _sub from;
 >> with _sub _rel;
 >> on _sub _rel;
 >> at _sub _rel;
 >> through _sub _rel;
+>> over _sub _rel;
 >> without _sub with; -- TODO _rel out;
 >> toward _sub to;
 >> before _sub _rel;
 -->> because _sub to_be _rel cause;
 >> under _sub _rel;
+>> such_as _sub as;
 >> group _sub number;
 >> group_of _sub of _rel group;
 >> energy _sub _entity;
