@@ -524,7 +524,8 @@ represents word = "after"
 categorized_as adjective_adverb
 has definition = "behind"
 
->> time:again _sub time _rel another
+>> time:again _sub time
+_rel another
 identified_as "VOA:again:0"
 represents word = "again"
 categorized_as adjective_adverb
