@@ -509,7 +509,10 @@ represents word = "afraid"
 categorized_as adjective_adverb
 has definition = "feeling fear"
 
->> after _sub _rel
+>> time _sub _entity;
+>> time:after _sub time;
+
+>> time:after
 identified_as "VOA:after:0"
 represents word = "after"
 categorized_as adjective_adverb
@@ -1188,7 +1191,6 @@ categorized_as conjunction
 has definition = "equally"
 has example = "as fast as"
 
->> time _sub _entity;
 >> when _sub time;
 
 >> when:as _sub when
