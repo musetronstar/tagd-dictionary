@@ -524,17 +524,17 @@ represents word = "after"
 categorized_as adjective_adverb
 has definition = "behind"
 
--->> 
---identified_as "VOA:again:0"
---represents word = "again"
---categorized_as adjective_adverb
---has definition = "another time"
+>> time:again _sub time _rel another
+identified_as "VOA:again:0"
+represents word = "again"
+categorized_as adjective_adverb
+has definition = "another time"
 
--->> 
---identified_as "VOA:again:1"
---represents word = "again"
---categorized_as adjective_adverb
---has definition = "as before"
+>> before:again _sub before
+identified_as "VOA:again:1"
+represents word = "again"
+categorized_as adjective_adverb
+has definition = "as before"
 
 -->> 
 --identified_as "VOA:against:0"
