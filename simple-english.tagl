@@ -537,11 +537,13 @@ represents word = "again"
 categorized_as adjective_adverb
 has definition = "as before"
 
--->> 
---identified_as "VOA:against:0"
---represents word = "against"
---categorized_as adjective_adverb
---has definition = "opposed to"
+>> opposed_to _sub _rel;
+
+>> against _sub opposed_to
+identified_as "VOA:against:0"
+represents word = "against"
+categorized_as adjective_adverb
+has definition = "opposed to"
 
 -->> 
 --identified_as "VOA:against:1"
