@@ -131,12 +131,7 @@
 >> without _sub with; -- TODO _rel out;
 >> toward _sub to;
 >> before _sub _rel;
->> because _sub for
-identified_as "VOA:because:0"
-represents word = "because"
-categorized_as preposition
-has definition = "for the reason that"
-has example = "He left because he was sick."
+>> because _sub for;
 
 >> under _sub _rel;
 >> such_as _sub as;
@@ -1578,6 +1573,13 @@ has definition = "when"
 --represents word = "beauty"
 --categorized_as noun
 --has definition = "that which pleases the eye, ear or spirit"
+
+>> because
+identified_as "VOA:because:0"
+represents word = "because"
+categorized_as preposition
+has definition = "for the reason that"
+has example = "He left because he was sick."
 
 -->> 
 --identified_as "VOA:become:0"
