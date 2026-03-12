@@ -509,17 +509,17 @@ represents word = "afraid"
 categorized_as adjective_adverb
 has definition = "feeling fear"
 
--->> 
---identified_as "VOA:after:0"
---represents word = "after"
---categorized_as adjective_adverb
---has definition = "later"
+>> after _sub _rel
+identified_as "VOA:after:0"
+represents word = "after"
+categorized_as adjective_adverb
+has definition = "later"
 
--->> 
---identified_as "VOA:after:1"
---represents word = "after"
---categorized_as adjective_adverb
---has definition = "behind"
+>> place:after _sub place
+identified_as "VOA:after:1"
+represents word = "after"
+categorized_as adjective_adverb
+has definition = "behind"
 
 -->> 
 --identified_as "VOA:again:0"
