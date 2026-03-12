@@ -7466,11 +7466,13 @@ has definition = "the same in amount, size, weight or value"
 --categorized_as verb
 --has definition = "to make a part of"
 
--->> 
---identified_as "VOA:increase:0"
---represents word = "increase"
---categorized_as verb
---has definition = "to make more in size or amount"
+>> increase
+to_make more
+in size, amount
+identified_as "VOA:increase:0"
+represents word = "increase"
+categorized_as verb
+has definition = "to make more in size or amount"
 
 -->> 
 --identified_as "VOA:independent:0"
